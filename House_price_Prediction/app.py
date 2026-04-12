@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd 
 import joblib
 
-df=pd.read_csv("Cleaned_df.csv")
 st.set_page_config(page_icon="🏘️",page_title="HOUSEPRICEPREDICTION",layout="wide")
 with open("RF_model.joblib","rb") as file:
     model=joblib.load(file)
