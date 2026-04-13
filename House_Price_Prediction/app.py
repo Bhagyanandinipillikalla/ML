@@ -3,8 +3,7 @@ import pandas as pd
 import joblib
 
 st.set_page_config(page_icon="🏘️",page_title="HOUSEPRICEPREDICTION",layout="wide")
-with open("House_Price_prediction/
-RF_model.joblib","rb") as file:
+with open("House_Price_Prediction/RF_model.joblib","rb") as file:
     model=joblib.load(file)
 
 df=pd.read_csv("House_Price_Prediction/Cleaned_df.csv")
