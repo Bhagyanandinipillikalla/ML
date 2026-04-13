@@ -9,12 +9,12 @@ with open("House_Price_Prediction/RF_model.joblib","rb") as file:
 df=pd.read_csv("House_Price_Prediction/Cleaned_df.csv")
     
 st.title("HOUSE PRICE PREDICTION")
-st.image("House_Price_Pediction/h1.jpg",width=300)
+st.image("House_Price_Prediction/h1.jpg",width=300)
 
 
 with st.sidebar:
     st.title("HOUSE PRICE PREDICTION")
-    st.image("House_Price_Pediction/h1.jpg")
+    st.image("House_Price_Prediction/h1.jpg")
 with st.container(border=True):
     col1,col2=st.columns(2)
     with col1:
